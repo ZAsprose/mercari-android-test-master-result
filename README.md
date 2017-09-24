@@ -1,3 +1,53 @@
+#mercari-android-test-result
+For Technical interview 
+
+##Overview
+There are three potential choices for this task: 
+TableLayout, GridView and ListView. Since ListView 
+requires a lot of customization, and the requirement 
+indicates that further implementation might be possible. 
+Let's have GridView as the basic holder.
+
+Taking future improvement and current data size into consideration, 
+we implement classes for the convinence of modifying different functions
+ and parts of the program.
+ 
+##Important Data Structure
+- MainActivity  
+Implemented by Mercari and Zijun to load GridView. ScrollListener included for 
+dynamtic loading the data.
+- GridAdapter  
+Implemented by Zijun as the adapter for loading GridView.
+- Item  
+Implemented by Mercari for storing every entity in `all.json`.
+- Response  
+Implemented by Mercari to store data from `all.json`.
+- HomeResponse  
+Implemented by Mercari and Zijun to parse `all.json` and 
+store the result in a `Response` object.
+
+#modified and created files
+- app/src/main/java/com.mercari.mercaritest/data.model/HomeResponse.java
+- app/src/main/java/com.mercari.mercaritest/data.model/Response.java 
+- app/src/main/java/com.mercari.mercaritest/GridAdapter.java
+- app/src/main/java/com.mercari.mercaritest/MainActivity.java
+- app/src/main/res/layout/activity_main.xml
+- app/src/main/res/layout/grid_cell.xml
+
+##Built with
+Android Studio 2.3.3  
+Gradle 2.3.3
+
+##Authors
+Mercari  
+https://www.mercari.com  
+https://drive.google.com/open?id=0B6BblBzgS-MzYXhVSEJsYzZCWE0  
+
+Zijun Zhang  
+https://github.com/ZAsprose
+
+# Attached original README
+
 # mercari-android-test
 For Technical interview 
 
