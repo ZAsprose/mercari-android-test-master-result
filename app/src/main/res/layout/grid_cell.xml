@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginRight="4.5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:text="$$$"
+            android:background="@drawable/item_price_background"
+            android:layout_alignBottom="@id/itemPhoto"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="3dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/black_14_white"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="9dp"
+        android:text="name"
+        android:textAppearance="@style/regular_14_black_70op"/>
+
+</LinearLayout>
